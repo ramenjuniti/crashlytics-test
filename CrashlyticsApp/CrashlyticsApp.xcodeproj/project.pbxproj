@@ -104,7 +104,6 @@
 				9AA8570E65A4CECF135A3327 /* Pods-CrashlyticsAppTests.debug.xcconfig */,
 				A7016EB1E9C2A8966C0A00AD /* Pods-CrashlyticsAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
