@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CrashlyticsApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CrashlyticsApp
+  pod 'FluctSDK'
+  pod 'FluctSDK-MediationAdapter/AppLovin'
+  pod 'FluctSDK-MediationAdapter/maio'
+  pod 'FluctSDK-MediationAdapter/nend'
+  pod 'FluctSDK-MediationAdapter/UnityAds'
+  pod 'FluctSDK-MediationAdapter/AdColony'
+  pod 'FluctSDK-MediationAdapter/Tapjoy'
+  pod 'FluctSDK-MediationAdapter/AdCorsa'
+  pod 'FluctSDK-MediationAdapter/Five'
+
+  target 'CrashlyticsAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'CrashlyticsAppUITests' do
+    # Pods for testing
+  end
+
+end
