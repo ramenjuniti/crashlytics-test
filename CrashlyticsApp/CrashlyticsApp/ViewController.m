@@ -23,6 +23,11 @@
     FSSRewardedVideo.sharedInstance.setting = setting;
 }
 
+// クラッシュコード
+- (IBAction)crashButtonTapped:(id)sender {
+    @[][1];
+}
+
 - (IBAction)load:(id)sender {
     [FSSRewardedVideo.sharedInstance loadRewardedVideoWithGroupId:@"1000085420" unitId:@"1000127865"];
 }

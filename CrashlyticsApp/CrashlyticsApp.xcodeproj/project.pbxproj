@@ -19,6 +19,9 @@
 		F54E389326B836FC00D3BAB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E389226B836FC00D3BAB1 /* main.m */; };
 		F54E389D26B836FC00D3BAB1 /* CrashlyticsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E389C26B836FC00D3BAB1 /* CrashlyticsAppTests.m */; };
 		F54E38A726B836FC00D3BAB1 /* CrashlyticsAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F54E38A626B836FC00D3BAB1 /* CrashlyticsAppUITests.m */; };
+		F54E38B426B8427900D3BAB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F54E38B326B8427900D3BAB1 /* GoogleService-Info.plist */; };
+		F54E38B526B8427900D3BAB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F54E38B326B8427900D3BAB1 /* GoogleService-Info.plist */; };
+		F54E38B626B8427900D3BAB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F54E38B326B8427900D3BAB1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,7 @@
 		F54E389C26B836FC00D3BAB1 /* CrashlyticsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashlyticsAppTests.m; sourceTree = "<group>"; };
 		F54E38A226B836FC00D3BAB1 /* CrashlyticsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashlyticsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54E38A626B836FC00D3BAB1 /* CrashlyticsAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashlyticsAppUITests.m; sourceTree = "<group>"; };
+		F54E38B326B8427900D3BAB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC7C8AA427E5AA9083C51A9C /* Pods-CrashlyticsApp-CrashlyticsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrashlyticsApp-CrashlyticsAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-CrashlyticsApp-CrashlyticsAppUITests/Pods-CrashlyticsApp-CrashlyticsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +156,7 @@
 				F54E388C26B836FB00D3BAB1 /* Assets.xcassets */,
 				F54E388E26B836FB00D3BAB1 /* LaunchScreen.storyboard */,
 				F54E389126B836FC00D3BAB1 /* Info.plist */,
+				F54E38B326B8427900D3BAB1 /* GoogleService-Info.plist */,
 				F54E389226B836FC00D3BAB1 /* main.m */,
 			);
 			path = CrashlyticsApp;
@@ -185,6 +190,8 @@
 				F54E387A26B836F900D3BAB1 /* Frameworks */,
 				F54E387B26B836F900D3BAB1 /* Resources */,
 				EF4D16DC0BE31DCEB7960773 /* [CP] Copy Pods Resources */,
+				A8DFED7B824065D6737CBA5F /* [CP] Embed Pods Frameworks */,
+				F54E38B726B843FF00D3BAB1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -223,6 +230,7 @@
 				F54E389F26B836FC00D3BAB1 /* Frameworks */,
 				F54E38A026B836FC00D3BAB1 /* Resources */,
 				38C6D0176B9BF65527ADDF49 /* [CP] Copy Pods Resources */,
+				C679E309D44D136A36FCC530 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -282,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54E389026B836FB00D3BAB1 /* LaunchScreen.storyboard in Resources */,
+				F54E38B426B8427900D3BAB1 /* GoogleService-Info.plist in Resources */,
 				F54E388D26B836FB00D3BAB1 /* Assets.xcassets in Resources */,
 				F54E388B26B836F900D3BAB1 /* Main.storyboard in Resources */,
 			);
@@ -291,6 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54E38B526B8427900D3BAB1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +308,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54E38B626B8427900D3BAB1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +376,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A8DFED7B824065D6737CBA5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsApp/Pods-CrashlyticsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsApp/Pods-CrashlyticsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsApp/Pods-CrashlyticsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C5EEB3CF50AA77E14F5FB307 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,6 +415,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C679E309D44D136A36FCC530 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsApp-CrashlyticsAppUITests/Pods-CrashlyticsApp-CrashlyticsAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsApp-CrashlyticsAppUITests/Pods-CrashlyticsApp-CrashlyticsAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsApp-CrashlyticsAppUITests/Pods-CrashlyticsApp-CrashlyticsAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		EF4D16DC0BE31DCEB7960773 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,6 +448,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrashlyticsApp/Pods-CrashlyticsApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F54E38B726B843FF00D3BAB1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

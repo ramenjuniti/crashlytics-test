@@ -16,6 +16,9 @@ target 'CrashlyticsApp' do
   pod 'FluctSDK-MediationAdapter/AdCorsa'
   pod 'FluctSDK-MediationAdapter/Five'
 
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+
   target 'CrashlyticsAppTests' do
     inherit! :search_paths
     # Pods for testing
