@@ -14,7 +14,10 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*/Pods/*
 
 .DS_Store
-*/Pods/*
+
 GoogleService-Info.plist
+
+.idea
