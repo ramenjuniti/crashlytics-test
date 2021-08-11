@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+@import FirebaseCrashlytics;
 @import FluctSDK;
 
 @interface ViewController () <FSSRewardedVideoDelegate>
@@ -21,9 +22,13 @@
     FSSRewardedVideoSetting *setting = FSSRewardedVideoSetting.defaultSetting;
     setting.debugMode = YES;
     FSSRewardedVideo.sharedInstance.setting = setting;
+
+    // Crashlytics
+    [[FIRCrashlytics crashlytics] setCustomValue:@"うええええええいいいいいいいいい" forKey:@"FluctSDK"];
+    [[FIRCrashlytics crashlytics] log:@"Simple string message"];
 }
 
-// クラッシュコード
+// Crash Button
 - (IBAction)crashButtonTapped:(id)sender {
     @[][1];
 }
