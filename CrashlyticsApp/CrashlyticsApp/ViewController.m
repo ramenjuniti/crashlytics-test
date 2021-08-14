@@ -26,6 +26,10 @@
     // Crashlytics
     [[FIRCrashlytics crashlytics] setCustomValue:@"うええええええいいいいいいいいい" forKey:@"FluctSDK"];
     [[FIRCrashlytics crashlytics] log:@"Simple string message"];
+
+    // 動的に呼び出す
+    Class crashlyticsClass = NSClassFromString(@"FIRCrashlytics");
+    [[crashlyticsClass crashlytics] setCustomValue:@"リフレクションクラス" forKey:@"FluctSDK"];
 }
 
 // Crash Button
